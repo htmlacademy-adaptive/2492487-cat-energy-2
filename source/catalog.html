@@ -13,9 +13,9 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body>
   <header class="header">
-    <a class="header__logo logo" href="#">
+    <a class="header__logo logo" href="index.html">
       <picture>
         <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
         <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
@@ -28,10 +28,10 @@
       </button>
       <ul class="nav__list main-menu">
         <li class="main-menu__item">
-          <a class="main-menu__link main-menu__link--current" href="#">Главная</a>
+          <a class="main-menu__link" href="index.html">Главная</a>
         </li>
         <li class="main-menu__item">
-          <a class="main-menu__link" href="catalog.html">Каталог продукции</a>
+          <a class="main-menu__link main-menu__link--current" href="#">Каталог продукции</a>
         </li>
         <li class="main-menu__item">
           <a class="main-menu__link" href="#">Подбор программы</a>
@@ -39,62 +39,176 @@
       </ul>
     </nav>
   </header>
-  <main class="main-page">
-    <section class="main-page__hero hero">
-      <div class="hero__container">
-        <h1 class="hero__title">Функциональное питание для котов</h1>
-        <p class="hero__description">Занялся собой? Займись котом!</p>
-      </div>
-      <a class="hero__button button" href="#">Подобрать программу</a>
+  <main class="inner-page">
+    <section class="inner-page__catalog catalog">
+      <h1 class="catalog__title">Каталог продукции</h1>
+      <section class="catalog__main">
+        <h2 class="visually-hidden">Основные товары</h2>
+        <ul class="catalog__main-list">
+          <li class="catalog__main-card main-card">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/product-tablet-chiken-500g@1x.png 1x, images/product-tablet-chiken-500g@2x.png 2x" type="image/png" width="161" height="172">
+              <img class="main-card__image" src="images/product-mobile-chiken-500g@1x.png" srcset="images/product-mobile-chiken-500g@2x.png 2x" alt="Корм CAT ENERGY" width="68" height="86">
+            </picture>
+            <p class="main-card__title">CAT ENERGY PRO 500 г</p>
+            <dl class="main-card__points">
+              <dt class="main-card__points-name">Масса</dt>
+              <dd class="main-card__points-description">500 г</dd>
+              <dt class="main-card__points-name">Вкус</dt>
+              <dd class="main-card__points-description">Курица</dd>
+              <dt class="main-card__points-name">Цена</dt>
+              <dd class="main-card__points-description">700 Р</dd>
+            </dl>
+            <button class="main-card__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__main-card main-card">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/product-tablet-chiken-1000g@1x.png 1x, images/product-tablet-chiken-1000g@2x.png 2x" type="image/png" width="168" height="206">
+              <img class="main-card__image" src="images/product-mobile-chiken-1000g@1x.png" srcset="images/product-mobile-chiken-1000g@2x.png 2x" alt="Корм CAT ENERGY" width="84" height="100">
+            </picture>
+            <p class="main-card__title">CAT ENERGY PRO 1000 г</p>
+            <dl class="main-card__points">
+              <dt class="main-card__points-name">Масса</dt>
+              <dd class="main-card__points-description">1000 г</dd>
+              <dt class="main-card__points-name">Вкус</dt>
+              <dd class="main-card__points-description">Курица</dd>
+              <dt class="main-card__points-name">Цена</dt>
+              <dd class="main-card__points-description">1000 Р</dd>
+            </dl>
+            <button class="main-card__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__main-card main-card">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/product-tablet-fish-500g@1x.png 1x, images/product-tablet-fish-500g@2x.png 2x" type="image/png" width="161" height="172">
+              <img class="main-card__image" src="images/product-mobile-fish-500g@1x.png" srcset="images/product-mobile-fish-500g@2x.png 2x" alt="Корм CAT ENERGY" width="68" height="86">
+            </picture>
+            <p class="main-card__title">CAT ENERGY PRO 500 г</p>
+            <dl class="main-card__points">
+              <dt class="main-card__points-name">Масса</dt>
+              <dd class="main-card__points-description">500 г</dd>
+              <dt class="main-card__points-name">Вкус</dt>
+              <dd class="main-card__points-description">Рыба</dd>
+              <dt class="main-card__points-name">Цена</dt>
+              <dd class="main-card__points-description">700 Р</dd>
+            </dl>
+            <button class="main-card__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__main-card main-card">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/product-tablet-fish-1000g@1x.png 1x, images/product-tablet-fish-1000g@2x.png 2x" type="image/png" width="168" height="206">
+              <img class="main-card__image" src="images/product-mobile-fish-1000g@1x.png" srcset="images/product-mobile-fish-1000g@2x.png 2x" alt="Корм CAT ENERGY" width="84" height="100">
+            </picture>
+            <p class="main-card__title">CAT ENERGY PRO 1000 г</p>
+            <dl class="main-card__points">
+              <dt class="main-card__points-name">Масса</dt>
+              <dd class="main-card__points-description">1000 г</dd>
+              <dt class="main-card__points-name">Вкус</dt>
+              <dd class="main-card__points-description">Рыба</dd>
+              <dt class="main-card__points-name">Цена</dt>
+              <dd class="main-card__points-description">1000 Р</dd>
+            </dl>
+            <button class="main-card__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__main-card main-card">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/product-tablet-buckwheat-500g@1x.png 1x, images/product-tablet-buckwheat-500g@2x.png 2x" type="image/png" width="161" height="172">
+              <img class="main-card__image" src="images/product-mobile-buckwheat-500g@1x.png" srcset="images/product-mobile-buckwheat-500g@2x.png 2x" alt="Корм CAT ENERGY" width="68" height="86">
+            </picture>
+            <p class="main-card__title">CAT ENERGY SLIM 500 г</p>
+            <dl class="main-card__points">
+              <dt class="main-card__points-name">Масса</dt>
+              <dd class="main-card__points-description">500 г</dd>
+              <dt class="main-card__points-name">Вкус</dt>
+              <dd class="main-card__points-description">Гречка</dd>
+              <dt class="main-card__points-name">Цена</dt>
+              <dd class="main-card__points-description">400 Р</dd>
+            </dl>
+            <button class="main-card__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__main-card main-card">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/product-tablet-buckwheat-1000g@1x.png 1x, images/product-tablet-buckwheat-1000g@2x.png 2x" type="image/png" width="168" height="206">
+              <img class="main-card__image" src="images/product-mobile-buckwheat-1000g@1x.png" srcset="images/product-mobile-buckwheat-1000g@2x.png 2x" alt="Корм CAT ENERGY" width="84" height="100">
+            </picture>
+            <p class="main-card__title">CAT ENERGY SLIM 1000 г</p>
+            <dl class="main-card__points">
+              <dt class="main-card__points-name">Масса</dt>
+              <dd class="main-card__points-description">1000 г</dd>
+              <dt class="main-card__points-name">Вкус</dt>
+              <dd class="main-card__points-description">Гречка</dd>
+              <dt class="main-card__points-name">Цена</dt>
+              <dd class="main-card__points-description">700 Р</dd>
+            </dl>
+            <button class="main-card__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__main-card main-card">
+            <picture>
+              <source media="(min-width:768px)" srcset="images/product-tablet-rise-500g@1x.png 1x, images/product-tablet-rise-500g@2x.png 2x" type="image/png" width="161" height="172">
+              <img class="main-card__image" src="images/product-mobile-rise-500g@1x.png" srcset="images/product-mobile-rise-500g@2x.png 2x" alt="Корм CAT ENERGY" width="68" height="86">
+            </picture>
+            <p class="main-card__title">CAT ENERGY SLIM 500 г</p>
+            <dl class="main-card__points">
+              <dt class="main-card__points-name">Масса</dt>
+              <dd class="main-card__points-description">500 г</dd>
+              <dt class="main-card__points-name">Вкус</dt>
+              <dd class="main-card__points-description">Рис</dd>
+              <dt class="main-card__points-name">Цена</dt>
+              <dd class="main-card__points-description">500 Р</dd>
+            </dl>
+            <button class="main-card__button button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <p class="catalog__add-cards">Показать еще 100500 товаров</p>
+        <p class="catalog__add-cards-description">На самом деле вкусоов гораздо больше!</p>
+        <a class="catalog__add-cards-button" href="#">Показать все</a>
+      </section>
+      <section class="catalog__additional">
+        <h2 class="catalog__additional-title">Дополнительные товары</h2>
+        <ul class="catalog__additional-list">
+          <li class="catalog__additional-card additional-card">
+            <p class="additional-card__title">Сахарозаменитель</p>
+            <dl class="additional-card__points">
+              <dt class="additional-card__points-name">1 упаковка (100 г)</dt>
+              <dd class="additional-card__points-description">200 Р</dd>
+            </dl>
+            <button class="additional-card__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__additional-card additional-card">
+            <p class="additional-card__title">Питьевая вода</p>
+            <dl class="additional-card__points">
+              <dt class="additional-card__points-name">5 литров</dt>
+              <dd class="additional-card__points-description">50 Р</dd>
+            </dl>
+            <button class="additional-card__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__additional-card additional-card">
+            <p class="additional-card__title">Молоко</p>
+            <dl class="additional-card__points">
+              <dt class="additional-card__points-name">1 литр</dt>
+              <dd class="additional-card__points-description">100 Р</dd>
+            </dl>
+            <button class="additional-card__button button" type="button">Заказать</button>
+          </li>
+          <li class="catalog__additional-card additional-card">
+            <p class="additional-card__title">Витамины</p>
+            <dl class="additional-card__points">
+              <dt class="additional-card__points-name">1 упаковка (30 г)</dt>
+              <dd class="additional-card__points-description">300 Р</dd>
+            </dl>
+            <button class="additional-card__button button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <p class="catalog__additional-description">Закажите все и получите чехол для кота в подарок!</p>
+      </section>
     </section>
-    <section class="main-page__services services">
-      <h2 class="visually-hidden">Программы</h2>
-      <ul class="services__list services-list">
-        <li class="services__item service-item">
-          <h3 class="service-item__title">похудение</h3>
-          <p class="service-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="service-item__link" href="#">каталог slim</a>
-        </li>
-        <li class="services__item service-item">
-          <h3 class="service-item__title">набор массы</h3>
-          <p class="service-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="service-item__link" href="#">каталог pro</a>
-        </li>
-      </ul>
-    </section>
-    <section class="main-page__advantages advantages">
-      <h2 class="advantages__title">Как это работает</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item advantage-item">
-          <p class="advantage-item__description">Функциональное питание содержит только полезные питательные вещества.</p>
-        </li>
-        <li class="advantages__item advantage-item">
-          <p class="advantage-item__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-        </li>
-        <li class="advantages__item advantage-item">
-          <p class="advantage-item__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-        </li>
-        <li class="advantages__item advantage-item">
-          <p class="advantage-item__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-        </li>
-      </ul>
-    </section>
-    <section class="main-page__example example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="example__points points">
-        <dl class="points__list">
-          <dt class="points__name">5 кг</dt>
-          <dd class="points__description">снижение веса</dd>
-          <dt class="points__name">60 дней</dt>
-          <dd class="points__description">затрачено времени</dd>
-          <dt class="points__name">15 000 руб.</dt>
-          <dd class="points__description">Затраты на питание:</dd>
-        </dl>
-        <div class="example__slider slider">
-          <img class="slider__image" src="#" alt="Пример" width="280" height="256">
-        </div>
-      </div>
+    <section class="inner-page__newsletter newsletter">
+      <h2 class="newsletter__title">Акции и новинки</h2>
+      <p class="newsletter__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="newsletter__label-email" for="newsletter-email"></label>
+        <input class="newsletter__field-email" type="email" placeholder="kuklachev@gmail.com" name="newsletter-email" id="newsletter-email" required>
+        <button class="newsletter__button button" type="button">Подписаться</button>
+      </form>
     </section>
   </main>
   <footer class="footer">
