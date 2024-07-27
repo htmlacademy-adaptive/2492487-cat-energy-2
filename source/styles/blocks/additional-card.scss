@@ -1,0 +1,47 @@
+.additional-card {
+
+}
+
+.additional-card__title {
+  margin: 0;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $special-dark-grey;
+  text-transform: uppercase;
+}
+
+.additional-card__points {
+
+}
+
+.additional-card__points-name {
+  margin: 0;
+  line-height: 14px;
+}
+
+.additional-card__points-description {
+  margin: 0;
+  line-height: 14px;
+}
+
+.additional-card__button {
+
+}
+
+@media (min-width: 768px) {
+  .additional-card__title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-card__points-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-card__points-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

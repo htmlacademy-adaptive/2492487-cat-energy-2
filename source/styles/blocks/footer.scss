@@ -1,0 +1,45 @@
+.footer {
+
+}
+
+.footer__address {
+
+}
+
+.footer__container {
+
+}
+
+.footer__invitation {
+  margin: 0;
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $special-light-black;
+  text-transform: uppercase;
+}
+
+.footer__address-text {
+  margin: 0;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.footer__map {
+
+}
+
+.footer__links {
+
+}
+
+@media (min-width: 768px) {
+  .footer__invitation {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .footer__address-text {
+    font-size: 16px;
+  }
+}
