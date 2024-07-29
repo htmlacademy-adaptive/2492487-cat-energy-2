@@ -31,6 +31,31 @@
   font-size: 16px;
   line-height: 20px;
   color: $special-light-black;
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+}
+
+.catalog__add-cards::before {
+  display: block;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #d3d3d3;
+  top: 14px;
+  left: 100px;
+  position: absolute;
+}
+
+.catalog__add-cards::after {
+  display: block;
+  content: "";
+  width: 2px;
+  height: 30px;
+  background-color: #d3d3d3;
+  top: 0;
+  left: 114px;
+  position: absolute;
 }
 
 .catalog__add-cards-description {
@@ -67,12 +92,17 @@
 
 .catalog__additional-description {
   margin: 0;
+  display: block;
+  padding: 187px 60px 43px;
   font-size: 16px;
   line-height: 20px;
   color: $primary-light-color;
+  text-align: center;
+  background: rgba(104, 183, 56, 0.85) url("../../icons/stack.svg#catalog-gift") no-repeat center 59px;
+  background-size: 78px 80px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .catalog__title {
     font-size: 60px;
     line-height: 60px;
@@ -94,7 +124,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .catalog__additional-title {
     font-size: 40px;
     line-height: 40px;

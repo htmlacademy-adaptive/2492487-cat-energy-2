@@ -3,7 +3,7 @@
 }
 
 .hero__container {
-
+  background-color: rgba(104, 183, 56, 0.85);
 }
 
 .hero__title {
@@ -31,7 +31,7 @@
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .hero__title {
     font-size: 60px;
     line-height: 60px;

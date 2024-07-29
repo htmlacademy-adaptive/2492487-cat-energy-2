@@ -1,7 +1,35 @@
 .advantage-item {
-
+  position: relative;
 }
 
 .advantage-item__description {
   margin: 0;
+  display: block;
+  min-height: 60px;
+}
+
+.advantage-item__description::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advantage-item__description--benefit::before {
+  background-image: url("../../icons/stack.svg#advantage-back-1");
+}
+
+.advantage-item__description--cook::before {
+  background-image: url("../../icons/stack.svg#advantage-back-2");
+}
+
+.advantage-item__description--meal::before {
+  background-image: url("../../icons/stack.svg#advantage-back-3");
+}
+
+.advantage-item__description--time::before {
+  background-image: url("../../icons/stack.svg#advantage-back-4");
 }

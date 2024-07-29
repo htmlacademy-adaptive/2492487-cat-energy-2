@@ -17,14 +17,18 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+.main-menu__link--current {
+
+}
+
+@media (min-width: $tablet) {
   .main-menu__link {
     font-size: 18px;
     line-height: 24px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .main-menu__link {
     color: $primary-light-color;
     font-size: 20px;
@@ -32,6 +36,3 @@
   }
 }
 
-.main-menu__link--current {
-
-}

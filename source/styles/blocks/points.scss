@@ -37,7 +37,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .points__name {
     font-size: 30px;
     line-height: 37px;

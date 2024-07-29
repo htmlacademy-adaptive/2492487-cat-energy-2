@@ -22,7 +22,7 @@
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .example__title {
     font-size: 60px;
     line-height: 60px;

@@ -17,10 +17,10 @@
 }
 
 .advantages__item {
-
+  padding-left: 100px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .advantages__title {
     font-size: 60px;
     line-height: 60px;

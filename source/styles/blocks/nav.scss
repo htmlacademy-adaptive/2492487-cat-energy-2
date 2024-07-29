@@ -3,9 +3,19 @@
 }
 
 .nav__button {
-
+  width: 20px;
+  height: 20px;
+  background: url("../../icons/stack.svg#icon-menu-cross") no-repeat center;
+  border: none;
 }
 
 .nav__list {
 
 }
+
+@media (min-width: $desktop) {
+  .nav__list {
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+}
+

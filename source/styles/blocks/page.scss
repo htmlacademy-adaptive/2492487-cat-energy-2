@@ -1,5 +1,5 @@
 .page {
-  background-color: #7ab356dc;
+
 }
 
 .page__body {
@@ -10,7 +10,7 @@
   color: $secondary-color;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .page__body {
     font-size: 16px;
     line-height: 24px;
