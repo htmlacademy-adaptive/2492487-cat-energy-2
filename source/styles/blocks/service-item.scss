@@ -57,6 +57,29 @@
   top: 10px;
 }
 
+.service-item__link:hover::after {
+  background-image: url("../../icons/stack.svg#icon-arrow-longer");
+  right: -54px;
+}
+
+.service-item__link:focus {
+  outline-color: rgba(104, 183, 56, 0.7);
+}
+
+.service-item__link:focus::after {
+  background-image: url("../../icons/stack.svg#icon-arrow-longer");
+  right: -54px;
+}
+
+.service-item__link:active {
+  opacity: 0.3;
+}
+
+.service-item__link:active::after {
+  background-image: url("../../icons/stack.svg#icon-arrow-longer");
+  right: -54px;
+}
+
 @media (min-width: $tablet) {
   .service-item__title {
     font-size: 36px;
