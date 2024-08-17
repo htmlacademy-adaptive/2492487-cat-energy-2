@@ -3,7 +3,22 @@
 }
 
 .points__list {
+  margin: 0;
+  margin-bottom: 33px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.points__wraper {
+  width: 124px;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 15px 20px 17px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .points__name {
@@ -14,18 +29,33 @@
   text-transform: uppercase;
 }
 
+.points__description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  position: absolute;
+  left: auto;
+  bottom: -14px;
+  width: 80px;
+  padding: 0 4px;
+  background-color: #eaeaea;
+  box-sizing: border-box;
+}
+
+.points__list-price {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .points__name--secondary-style {
   font-family: $primary-font;
   color: $primary-dark-color;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-}
-
-.points__description {
-  margin: 0;
-  font-size: 12px;
-  line-height: 12px;
 }
 
 .points__description--secondary-style {
@@ -38,6 +68,24 @@
 }
 
 @media (min-width: $tablet) {
+  .points {
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .points__list {
+    margin: 0;
+    gap: 43px;
+  }
+
+  .points__wraper {
+    width: 162px;
+    padding: 15px 8px 17px;
+    text-align: center;
+  }
+
   .points__name {
     font-size: 30px;
     line-height: 37px;
@@ -46,6 +94,18 @@
   .points__description {
     font-size: 14px;
     line-height: 14px;
+    left: auto;
+    bottom: -8px;
+    width: auto;
+    padding: 0 10px;
+    background-color: #ffffff;
+  }
+
+  .points__list-price {
+    margin: 0;
+    flex-direction: column-reverse;
+    gap: 8px;
+    align-items: end;
   }
 
   .points__name--secondary-style {
@@ -56,3 +116,24 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $desktop) {
+  .points {
+    margin-bottom: 0;
+  }
+
+  .points__wraper {
+    margin-bottom: 62px;
+  }
+
+  .points__description {
+    width: auto;
+    background-color: #f2f2f2;
+  }
+
+  .points__list-price {
+    flex-direction: row-reverse;
+    gap: 63px;
+  }
+}
+

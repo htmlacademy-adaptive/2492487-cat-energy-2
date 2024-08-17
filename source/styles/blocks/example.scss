@@ -1,9 +1,11 @@
 .example {
-
+  background-color: #eaeaea;
+  padding: 25px 20px 35px;
 }
 
 .example__title {
   margin: 0;
+  margin-bottom: 40px;
   font-family: $primary-font;
   font-size: 36px;
   line-height: 40px;
@@ -12,6 +14,7 @@
 
 .example__description {
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__points {
@@ -23,8 +26,52 @@
 }
 
 @media (min-width: $tablet) {
+  .example {
+    background: none;
+    padding: 45px 0 0;
+  }
+
   .example__title {
+    padding: 0 30px;
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  .example__description {
+    padding: 0 30px;
+    margin-bottom: 55px;
+  }
+
+  .example__points {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .example {
+    display: flex;
+    justify-content: space-between;
+    background: #f2f2f2;
+    padding: 0 110px 75px;
+  }
+
+  .example__wraper {
+    width: 436px;
+  }
+
+  .example__title {
+    padding: 0;
+    margin-bottom: 146px;
+  }
+
+  .example__description {
+    padding: 0;
+    padding-right: 4px;
+    margin-bottom: 69px;
+  }
+
+  .example__points {
+    padding: 0;
   }
 }

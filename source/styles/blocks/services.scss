@@ -1,5 +1,5 @@
 .services {
-
+  margin: 0 20px;
 }
 
 .services__list {
@@ -10,4 +10,22 @@
 
 .services__item {
 
+}
+
+@media (min-width: $tablet) {
+  .services {
+    margin: 0 30px 46px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .services {
+    margin: 0 110px;
+  }
+
+  .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

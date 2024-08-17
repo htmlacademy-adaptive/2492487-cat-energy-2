@@ -5,7 +5,9 @@
 }
 
 .main-menu__item {
-
+  padding: 23px 15px;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .main-menu__link {
@@ -17,11 +19,17 @@
   text-transform: uppercase;
 }
 
-.main-menu__link--current {
-
-}
 
 @media (min-width: $tablet) {
+  .main-menu__item {
+    padding: 6px 0;
+    border: none;
+  }
+
+  .main-menu__item--current {
+    border-bottom: 2px solid #68b738;
+  }
+
   .main-menu__link {
     font-size: 18px;
     line-height: 24px;
@@ -29,6 +37,10 @@
 }
 
 @media (min-width: $desktop) {
+  .main-menu__item--current {
+    border-bottom: 2px solid #ffffff;
+  }
+
   .main-menu__link {
     color: $primary-light-color;
     font-size: 20px;

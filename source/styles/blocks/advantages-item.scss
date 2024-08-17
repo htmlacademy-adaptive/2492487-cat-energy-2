@@ -2,13 +2,7 @@
   position: relative;
 }
 
-.advantage-item__description {
-  margin: 0;
-  display: block;
-  min-height: 60px;
-}
-
-.advantage-item__description::before {
+.advantage-item::before {
   content: "";
   display: block;
   width: 60px;
@@ -18,18 +12,37 @@
   left: 0;
 }
 
-.advantage-item__description--benefit::before {
+.advantage-item--benefit::before {
   background-image: url("../../icons/stack.svg#advantage-back-1");
 }
 
-.advantage-item__description--cook::before {
+.advantage-item--cook::before {
   background-image: url("../../icons/stack.svg#advantage-back-2");
 }
 
-.advantage-item__description--meal::before {
+.advantage-item--meal::before {
   background-image: url("../../icons/stack.svg#advantage-back-3");
 }
 
-.advantage-item__description--time::before {
+.advantage-item--time::before {
   background-image: url("../../icons/stack.svg#advantage-back-4");
+}
+
+.advantage-item__description {
+  margin: 0;
+  display: block;
+  min-height: 60px;
+}
+
+@media (min-width: $tablet) {
+  .advantage-item::before {
+    width: 80px;
+    height: 80px;
+    top: 40px;
+    left: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+
 }

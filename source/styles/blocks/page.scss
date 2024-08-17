@@ -17,3 +17,11 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .page__body {
+    margin: 0 auto;
+    padding-top: 55px;
+    max-width: 1440px;
+  }
+}
+

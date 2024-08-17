@@ -1,7 +1,36 @@
 .slider {
-
+  text-align: center;
 }
 
 .slider__image {
+}
 
+@media (min-width: $tablet) {
+  .slider {
+    background-color: #eaeaea;
+    position: relative;
+    padding-bottom: 101px;
+  }
+
+  .slider::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 151px;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+  }
+
+  .slider__image {
+    width: 560px;
+    height: 512px;
+    z-index: 5;
+  }
+}
+
+@media (min-width: $desktop) {
+  .slider {
+    padding: 0;
+  }
 }
