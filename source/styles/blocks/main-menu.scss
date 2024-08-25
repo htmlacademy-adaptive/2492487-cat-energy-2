@@ -37,14 +37,17 @@
 }
 
 @media (min-width: $desktop) {
-  .main-menu__item--current {
+  .main-menu__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .main-menu--index .main-menu__item--current {
     border-bottom: 2px solid #ffffff;
   }
 
-  .main-menu__link {
+  .main-menu--index .main-menu__link {
     color: $primary-light-color;
-    font-size: 20px;
-    line-height: 30px;
   }
 }
 

@@ -1,8 +1,8 @@
 .header {
   width: 100%;
-  height: 65px;
-  background: url("../../icons/stack.svg#logo-cat-energy") no-repeat center;
-  background-size: 100px 100%;
+  padding-top: 65px;
+  background: url("../../icons/stack.svg#logo-cat-energy") no-repeat center 25px;
+  background-size: 100% 20px;
 }
 
 .header__logo {
@@ -26,13 +26,11 @@
 @media (min-width: $tablet) {
   .header {
     background: none;
-    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 34px 0 30px;
     box-sizing: border-box;
-    margin-bottom: 60px;
   }
 
   .header__logo {
@@ -44,8 +42,8 @@
 
 @media (min-width: $desktop) {
   .header {
-    width: auto;
+    width: 1220px;
     padding: 0;
-    margin: 0 110px 104px;
+    margin: 0 auto;
   }
 }

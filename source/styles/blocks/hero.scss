@@ -2,13 +2,13 @@
   margin-bottom: 20px;
 }
 
-.hero__wraper {
+.hero__wrapper {
   padding-bottom: 135px;
   position: relative;
   margin-bottom: 3px;
 }
 
-.hero__wraper::after {
+.hero__wrapper::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -45,6 +45,7 @@
   color: $primary-light-color;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -67,11 +68,11 @@
     margin: 0;
   }
 
-  .hero__wraper {
+  .hero__wrapper {
     padding: 0;
   }
 
-  .hero__wraper::after {
+  .hero__wrapper::after {
     display: none;
   }
 
@@ -102,7 +103,7 @@
     text-align: left;
   }
 
-  .hero__button-wraper {
+  .hero__button-wrapper {
     position: relative;
     padding-bottom: 526px;
   }
@@ -117,7 +118,7 @@
     padding-top: 13px;
   }
 
-  .hero__button-wraper::after {
+  .hero__button-wrapper::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -140,7 +141,7 @@
     width: 720px;
     background-color: rgba(104, 183, 56, 0.85);
     position: absolute;
-    left: 720px;
+    left: 50%;
     top: 0;
     z-index: -5;
   }
@@ -154,27 +155,34 @@
     background: url("../../images/index-background-desktop@1x.jpeg") no-repeat 0 0;
     background-size: cover;
     top: 0;
-    left: 720px;
+    left: 50%;
     z-index: -10;
   }
 
+  .hero__container {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .hero__title {
-    margin: 0 800px 40px 190px;
+    margin: 0 800px 40px 0;
   }
 
   .hero__description {
-    margin: 0 800px 52px 190px;
+    margin: 0 800px 52px 0;
   }
 
-  .hero__button-wraper {
+  .hero__button-wrapper {
+    width: 1220px;
+    margin: 0 auto;
     padding-bottom: 184px;
   }
 
   .hero__button {
-    margin: 0 190px;
+    margin: 0;
   }
 
-  .hero__button-wraper::after {
+  .hero__button-wrapper::after {
     height: 499px;
     background: url("../../images/index-hero-desktop@1x.png") no-repeat center;
     left: auto;

@@ -1,5 +1,4 @@
 .page {
-
 }
 
 .page__body {
@@ -8,6 +7,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $secondary-color;
+  font-weight: 400;
 }
 
 @media (min-width: $tablet) {
@@ -21,7 +21,6 @@
   .page__body {
     margin: 0 auto;
     padding-top: 55px;
-    max-width: 1440px;
   }
 }
 

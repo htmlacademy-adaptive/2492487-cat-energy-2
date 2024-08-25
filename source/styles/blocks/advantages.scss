@@ -8,6 +8,7 @@
   font-family: $primary-font;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   color: $primary-dark-color;
 }
 
@@ -51,7 +52,8 @@
 
 @media (min-width: $desktop) {
   .advantages {
-    margin: 0 110px 69px;
+    width: 1220px;
+    margin: 0 auto 69px;
   }
 
   .advantages__list {

@@ -10,6 +10,11 @@
   height: 362px;
 }
 
+.map__picture {
+  margin: 0 auto;
+  display: block;
+}
+
 @media (min-width: $tablet) {
   .map__google {
     height: 400px;

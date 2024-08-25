@@ -61,7 +61,10 @@
 
 @media (min-width: $desktop) {
   .footer {
+    width: 1440px;
+    margin: 0 auto;
     position: relative;
+    background-color: #f2f2f2;
   }
 
   .footer__container {
@@ -72,7 +75,7 @@
     width: 565px;
     box-sizing: border-box;
     top: 95px;
-    left: 110px;
+    left: calc(50% - 610px);
   }
 
   .footer__address-text {

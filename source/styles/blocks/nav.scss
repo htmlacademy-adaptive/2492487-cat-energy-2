@@ -1,5 +1,5 @@
 .nav {
-  position: relative;
+
 }
 
 .nav__button {
@@ -23,6 +23,10 @@
   background: url("../../icons/stack.svg#icon-menu-lines") no-repeat center;
 }
 
+.nav__list {
+  border-top: 1px solid #e6e6e6;
+}
+
 .nav--closed .nav__list {
   display: none;
 }
@@ -35,27 +39,30 @@
   left: 0;
   background-color: #ffffff;
   z-index: 5;
-  border-top: 1px solid #e6e6e6;
 }
 
 @media (min-width: $tablet) {
   .nav {
     border: none;
+    position: relative;
   }
 
-  .nav--closed .nav__button {
-    display: none;
-  }
-
+  .nav--closed .nav__button,
   .nav--opened .nav__button {
     display: none;
   }
 
-  .nav--closed .nav__list {
+  .nav__list,
+  .nav--closed .nav__list,
+  .nav--opened .nav__list {
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     gap: 35px;
+    border: none;
+    position: relative;
+    top: 0;
+    background: none;
   }
 }
 
