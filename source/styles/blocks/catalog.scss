@@ -310,7 +310,7 @@
 
   .catalog__additional {
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 95px;
   }
 
   .catalog__additional-title {
@@ -333,17 +333,13 @@
     top: 17px;
   }
 
-  .catalog__additional {
-    margin-bottom: 95px;
-  }
-
   .catalog__additional-wrapper {
     display: flex;
     justify-content: space-between;
   }
 
   .catalog__additional-list {
-    width: 896px;
+    max-width: 896px;
     margin: 0;
   }
 

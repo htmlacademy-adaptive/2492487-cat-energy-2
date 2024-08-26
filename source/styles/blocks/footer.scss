@@ -61,21 +61,25 @@
 
 @media (min-width: $desktop) {
   .footer {
-    width: 1440px;
     margin: 0 auto;
     position: relative;
     background-color: #f2f2f2;
   }
 
+  .footer__address {
+    position: relative;
+    padding: 94px 0 106px;
+  }
+
   .footer__container {
-    position: absolute;
+    position: relative;
     background-color: #ffffff;
-    padding: 60px 78px 60px 80px;
-    gap: 87px;
+    padding: 62px 78px 58px 80px;
+    gap: 92px;
     width: 565px;
     box-sizing: border-box;
-    top: 95px;
     left: calc(50% - 610px);
+    z-index: 5;
   }
 
   .footer__address-text {

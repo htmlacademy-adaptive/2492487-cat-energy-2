@@ -4,19 +4,17 @@
 
 .points__list {
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .points__wrapper {
-  width: 124px;
+  min-width: 124px;
   text-align: center;
-  border: 1px solid #cdcdcd;
   border-radius: 3px;
-  padding: 15px 20px 17px;
   box-sizing: border-box;
   position: relative;
 }
@@ -27,15 +25,15 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  padding: 13px 20px 17px;
+  border: 1px solid #cdcdcd;
 }
 
 .points__description {
-  margin: 0;
+  margin: 0 auto;
+  margin-top: -9px;
   font-size: 12px;
   line-height: 12px;
-  position: absolute;
-  left: auto;
-  bottom: -14px;
   width: 80px;
   padding: 0 4px;
   background-color: #eaeaea;
@@ -81,22 +79,20 @@
 
   .points__wrapper {
     width: 162px;
-    padding: 15px 8px 17px;
     text-align: center;
   }
 
   .points__name {
     font-size: 30px;
     line-height: 37px;
+    padding: 15px 8px 17px;
   }
 
   .points__description {
     font-size: 14px;
     line-height: 14px;
-    left: auto;
-    bottom: -8px;
-    width: auto;
-    padding: 0 10px;
+    min-width: 135px;
+    padding: 0 5px;
     background-color: #ffffff;
   }
 

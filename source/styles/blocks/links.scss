@@ -36,6 +36,7 @@
   display: block;
   font-size: 16px;
   line-height: 20px;
+  color: $secondary-color;
   text-decoration: none;
   position: relative;
   justify-self: start;
@@ -72,6 +73,10 @@
 
 .links__academy:active::after {
   background-color: #68b738;
+}
+
+.links__academy:visited {
+  color: $secondary-color;
 }
 
 
