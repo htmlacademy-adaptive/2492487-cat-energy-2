@@ -11,6 +11,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
 </head>
 
 <body class="page__body">
@@ -111,12 +114,16 @@
           <ul class="slider__list">
             <li class="slider__lever slider__lever--before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-tablet-before@1x.webp 1x, images/cat-tablet-before@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-mobile-before@1x.webp 1x, images/cat-mobile-before@2x.webp 2x" width="280" height="256">
                 <source media="(min-width:768px)" srcset="images/cat-tablet-before@1x.png 1x, images/cat-tablet-before@2x.png 2x" type="image/png" width="560" height="512">
                 <img class="slider__image" src="images/cat-mobile-before@1x.png" srcset="images/cat-mobile-before@2x.png 2x" alt="Пример" width="280" height="256">
               </picture>
             </li>
             <li class="slider__lever slider__lever--after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-tablet-after@1x.webp 1x, images/cat-tablet-after@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-mobile-after@1x.webp 1x, images/cat-mobile-after@2x.webp 2x" width="280" height="256">
                 <source media="(min-width:768px)" srcset="images/cat-tablet-after@1x.png 1x, images/cat-tablet-after@2x.png 2x" type="image/png" width="560" height="512">
                 <img class="slider__image" src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" alt="Пример" width="280" height="256">
               </picture>
@@ -140,6 +147,9 @@
         </div>
         <div class="map__image">
           <picture>
+            <source type="image/webp" media="(min-width:1440px)" srcset="images/map-location-desktop@1x.webp 1x, images/map-location-desktop@2x.webp 2x" width="1440" height="400">
+            <source type="image/webp" media="(min-width:768px)" srcset="images/map-location-tablet@1x.webp 1x, images/map-location-tablet@2x.webp 2x" width="768" height="400">
+            <source type="image/webp" srcset="images/map-location-mobile@1x.webp 1x, images/map-location-mobile@2x.webp 2x" width="320" height="362">
             <source type="image/jpeg" media="(min-width:1440px)" srcset="images/map-location-desktop@1x.jpeg 1x, images/map-location-desktop@2x.jpeg 2x" width="1440" height="400">
             <source type="image/jpeg" media="(min-width:768px)" srcset="images/map-location-tablet@1x.jpeg 1x, images/map-location-tablet@2x.jpeg 2x" width="768" height="400">
             <img class="map__picture" src="images/map-location-mobile@1x.jpeg" alt="Карта с расположением" srcset="images/map-location-mobile@2x.jpeg 2x" width="320" height="362">

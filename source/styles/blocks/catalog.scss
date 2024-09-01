@@ -87,13 +87,39 @@
   box-sizing: border-box;
 }
 
+.catalog__add-cards-button:hover {
+  background-color: #ebebeb;
+}
+
+.catalog__add-cards-button:focus {
+  background-color: #ebebeb;
+  outline: none;
+}
+
+.catalog__add-cards-button:active {
+  background-color: #ebebeb;
+  color: $secondary-color;
+}
+
 .catalog__additional {
   margin-bottom: 40px;
-  padding: 0 20px;
+  padding: 0;
+  position: relative;
+}
+
+.catalog__additional::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #68b738;
+  left: 0;
+  top: 17px;
 }
 
 .catalog__additional-title {
   margin: 0;
+  padding: 0 40px 0 20px;
   margin-bottom: 34px;
   font-family: $primary-font;
   font-size: 24px;
@@ -101,16 +127,12 @@
   color: $primary-dark-color;
   font-weight: 400;
   position: relative;
+  width: fit-content;
+  background-color: #ffffff;
 }
 
-.catalog__additional-title::after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 266px);
-  height: 2px;
-  background-color: #68b738;
-  left: 266px;
-  top: 9px;
+.catalog__additional-wrapper {
+  padding: 0 20px;
 }
 
 .catalog__additional-list {
@@ -144,11 +166,15 @@
   position: absolute;
   width: 280px;
   height: 290px;
-  background: #c0b4b4 url("../../images/catalog-background-mobile@1x.jpeg") 50% 50%;
+  background: #c0b4b4 image-set(url("../../images/catalog-background-mobile@1x.webp"), url("../../images/catalog-background-mobile@1x.jpeg")) 50% 50%;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: image-set(url("../../images/catalog-background-mobile@2x.webp"), url("../../images/catalog-background-mobile@2x.jpeg"));
+  }
 }
 
 .catalog__additional-description-wrapper {
@@ -231,23 +257,6 @@
     margin-bottom: 80px;
   }
 
-  .catalog__additional-title::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background-color: #68b738;
-    left: -30px;
-    top: 14px;
-  }
-
-  .catalog__additional-title::after {
-    width: calc(100% - 381px);
-    height: 2px;
-    left: 381px;
-    top: 14px;
-  }
-
   .catalog__additional-list {
     margin-bottom: 69px;
   }
@@ -262,21 +271,28 @@
   .catalog__additional-description::before {
     width: 708px;
     height: 200px;
-    background: #c0b4b4 url("../../images/catalog-background-tablet@1x.jpeg") 50% 50%;
+    background: #c0b4b4 image-set(url("../../images/catalog-background-tablet@1x.webp"), url("../../images/catalog-background-tablet@1x.jpeg")) 50% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: image-set(url("../../images/catalog-background-tablet@2x.webp"), url("../../images/catalog-background-tablet@2x.jpeg"));
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .catalog {
-    width: 1220px;
-    margin: 0 auto;
   }
 
   .catalog__title {
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
   }
 
   .catalog__main {
+    width: 1220px;
+    margin: 0 auto;
     margin-bottom: 72px;
   }
 
@@ -314,26 +330,16 @@
   }
 
   .catalog__additional-title {
-    padding: 0;
+    margin-left: calc(50% - 650px);
+    padding: 0 40px;
     font-size: 40px;
     line-height: 40px;
   }
 
-  .catalog__additional-title::before {
-    width: 70px;
-    height: 2px;
-    left: -110px;
-    top: 17px;
-  }
-
-  .catalog__additional-title::after {
-    width: calc(100% - 416px);
-    height: 2px;
-    left: 416px;
-    top: 17px;
-  }
-
   .catalog__additional-wrapper {
+    padding: 0;
+    width: 1220px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
@@ -344,15 +350,19 @@
   }
 
   .catalog__additional-description {
-    padding: 185px 42px 43px;
+    padding: 183px 40px 43px;
     text-align: center;
-    background: rgba(104, 183, 56, 0.85) url("../../icons/stack.svg#catalog-gift") no-repeat center 59px;
+    background: rgba(104, 183, 56, 0.85) url("../../icons/stack.svg#catalog-gift") no-repeat center 56px;
     background-size: 78px 80px;
   }
 
   .catalog__additional-description::before {
     width: 245px;
     height: 288px;
-    background: #c0b4b4 url("../../images/catalog-background-desktop@1x.jpeg") 50% 50%;
+    background: #c0b4b4 image-set(url("../../images/catalog-background-desktop@1x.webp"), url("../../images/catalog-background-desktop@1x.jpeg")) 50% 50%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: image-set(url("../../images/catalog-background-desktop@2x.webp"), url("../../images/catalog-background-desktop@2x.jpeg"));
+    }
   }
 }

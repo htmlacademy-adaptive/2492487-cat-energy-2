@@ -19,6 +19,18 @@
   text-transform: uppercase;
 }
 
+.main-menu__link:hover {
+  opacity: 0.6;
+}
+
+.main-menu__link:focus {
+  outline: none;
+  opacity: 0.6;
+}
+
+.main-menu__link:active {
+  opacity: 0.3;
+}
 
 @media (min-width: $tablet) {
   .main-menu__item {
