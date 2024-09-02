@@ -24,10 +24,6 @@
   list-style: none;
 }
 
-.catalog__main-card {
-
-}
-
 .catalog__main-card--add {
   max-width: 450px;
   padding: 24px 20px;
@@ -141,10 +137,6 @@
   margin-bottom: 34px;
   padding: 0;
   list-style: none;
-}
-
-.catalog__additional-card {
-
 }
 
 .catalog__additional-description {
@@ -280,9 +272,6 @@
 }
 
 @media (min-width: $desktop) {
-  .catalog {
-  }
-
   .catalog__title {
     width: 1220px;
     margin-left: auto;

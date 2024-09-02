@@ -49,6 +49,10 @@
 }
 
 @media (min-width: $desktop) {
+  .main-menu {
+    width: 500px;
+  }
+
   .main-menu__link {
     font-size: 20px;
     line-height: 30px;
@@ -62,4 +66,3 @@
     color: $primary-light-color;
   }
 }
-

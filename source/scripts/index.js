@@ -11,17 +11,15 @@ navButton.addEventListener('click', () => {
 const slider = document.querySelector('.slider');
 const sliderButton = document.querySelector('.slider__toggle');
 
-if(slider){
-  flag = false;
-  sliderButton.addEventListener('click', () =>{
-    if(!flag) {
+if (slider) {
+  let flag = false;
+  sliderButton.addEventListener('click', () => {
+    if (!flag) {
       flag = true;
       slider.classList.add('slider--before');
-    }else{
+    } else {
       slider.classList.toggle('slider--before');
       slider.classList.toggle('slider--after');
     }
   });
 }
-
-
