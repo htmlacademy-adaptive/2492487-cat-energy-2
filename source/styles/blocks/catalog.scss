@@ -110,7 +110,7 @@
   height: 2px;
   background-color: #68b738;
   left: 0;
-  top: 17px;
+  top: 10px;
 }
 
 .catalog__additional-title {
@@ -242,11 +242,19 @@
     margin-bottom: 80px;
   }
 
+  .catalog__additional::before {
+    top: 14px;
+  }
+
   .catalog__additional-title {
     padding: 0 40px;
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 80px;
+  }
+
+  .catalog__additional-wrapper {
+    padding: 0;
   }
 
   .catalog__additional-list {

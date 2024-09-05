@@ -41,4 +41,36 @@
     top: 40px;
     left: 0;
   }
+
+  .advantage-item::after {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    display: inline-block;
+    width: 136px;
+    height: 280px;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    z-index: -5;
+  }
+
+  .advantage-item--benefit::after {
+    content: "1";
+    right: -7px;
+  }
+
+  .advantage-item--cook::after {
+    content: "2";
+  }
+
+  .advantage-item--meal::after {
+    content: "3";
+  }
+
+  .advantage-item--time::after {
+    content: "4";
+    right: -4px;
+  }
 }
