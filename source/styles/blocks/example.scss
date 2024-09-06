@@ -52,6 +52,8 @@
   }
 
   .example__container {
+    display: flex;
+    justify-content: space-between;
     width: 1220px;
     margin: 0 auto;
     position: relative;
@@ -89,8 +91,6 @@
   }
 
   .example__slider {
-    position: absolute;
-    top: -135px;
-    right: 0;
+    margin-top: -135px;
   }
 }
