@@ -70,6 +70,7 @@
   position: absolute;
   top: -3px;
   left: -2px;
+  box-sizing: border-box;
 }
 
 .slider__toggle::before {
@@ -212,7 +213,19 @@
     height: 512px;
   }
 
+  .slider::before {
+    height: 135px;
+  }
+
   .slider__lever {
     background-color: #f2f2f2;
+  }
+
+  .slider__lever::before {
+    height: 135px;
+  }
+
+  .slider__toggle {
+    transform: translate(-50%, -50%);
   }
 }

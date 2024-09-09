@@ -1,6 +1,6 @@
 .example {
   background-color: #eaeaea;
-  padding: 20px 20px 35px;
+  padding: 25px 20px 39px;
 }
 
 .example__title {
@@ -32,7 +32,7 @@
   }
 
   .example__wrapper {
-    margin-bottom: 106px;
+    margin-bottom: 100px;
   }
 
   .example__description {
@@ -52,6 +52,8 @@
   }
 
   .example__container {
+    display: flex;
+    justify-content: space-between;
     width: 1220px;
     margin: 0 auto;
     position: relative;
@@ -72,6 +74,7 @@
   }
 
   .example__wrapper {
+    margin: 0;
     padding-top: 70px;
     width: 436px;
     z-index: 1;
@@ -88,8 +91,6 @@
   }
 
   .example__slider {
-    position: absolute;
-    top: -151px;
-    right: 0;
+    margin-top: -135px;
   }
 }

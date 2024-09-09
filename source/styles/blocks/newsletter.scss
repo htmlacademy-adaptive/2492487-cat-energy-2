@@ -11,7 +11,7 @@
   height: 2px;
   background-color: #68b738;
   left: 0;
-  top: 17px;
+  top: 10px;
 }
 
 .newsletter__title {
@@ -32,7 +32,7 @@
   margin: 0 auto;
   padding: 0 20px;
   max-width: 280px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   text-align: center;
   font-family: $primary-font;
   font-size: 16px;
@@ -72,6 +72,10 @@
     margin-bottom: 80px;
   }
 
+  .newsletter::before {
+    top: 14px;
+  }
+
   .newsletter__title {
     padding: 0 40px;
     font-size: 32px;
@@ -87,7 +91,7 @@
 
   .newsletter__form {
     display: flex;
-
+    padding: 0;
     margin: 0 38px;
   }
 
